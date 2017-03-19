@@ -1,16 +1,10 @@
-# Angular2 Schema Form [![Build Status](https://travis-ci.org/makinacorpus/angular2-schema-form.svg?branch=master)](https://travis-ci.org/makinacorpus/angular2-schema-form)
+# Angular Schema Form [![Build Status](https://travis-ci.org/makinacorpus/Angular-schema-form.svg?branch=master)](https://travis-ci.org/makinacorpus/Angular-schema-form)
 
-Angular2 Schema Form is an Angular2 module allowing you to instanciate an HTML form from a [JSON schema](http://json-schema.org/).
-
-## DISCLAIMER
-
-Angular2 Schema Form is **not** related to [angular-schema-form](https://github.com/json-schema-form/angular-schema-form) and [schemaform.io](http://schemaform.io/).
-
-We think `angular-schema-form` is a great Angular 1 library, and when it will move to Angular 2, we will probably join our efforts to produce and maintain a unique Angular 2 solution.
+Angular Schema Form is an Angular module allowing you to instanciate an HTML form from a [JSON schema](http://json-schema.org/).
 
 ## Demo
-There is an [example of application](https://github.com/fbessou/angular2-schema-form-demo) using Angular2 Schema Form.
-You can also test the module on [the website](https://makinacorpus.github.io/angular2-schema-form).
+There is an [example of application](https://github.com/fbessou/agular-schema-form-demo) using Angular Schema Form.
+You can also test the module on [the website](https://makinacorpus.github.io/angular-schema-form).
 
 ## Features
 
@@ -21,10 +15,10 @@ You can also test the module on [the website](https://makinacorpus.github.io/ang
 * Allow declaration of custom widgets
 
 ## Installation
-To use Angular2 Schema Form in your project simply execute the following command:
+To use Angular Schema Form in your project simply execute the following command:
 
 ```bash
-npm install angular2-schema-form --save-dev
+npm install Angular-schema-form --save-dev
 ```
 
 You just have to check that all the peer-dependencies of this module are satisfied in your package.json.
@@ -68,13 +62,13 @@ export class AppComponent {
 }
 ```
 
-Create a module which import the AppComponent and configure Angular2 schema form.
+Create a module which import the AppComponent and configure Angular schema form.
 ```js
 //app.module.ts
 
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
-import { SchemaFormModule, WidgetRegistry, DefaultWidgetRegistry } from "angular2-schema-form";
+import { SchemaFormModule, WidgetRegistry, DefaultWidgetRegistry } from "Angular-schema-form";
 import { AppComponent } from "./app.component";
 
 @NgModule({
@@ -96,7 +90,7 @@ import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 
 import { AppModule } from "app.module";
 
-// Until Angular2 RC5, we have to specify we are using new forms API
+// Until Angular RC5, we have to specify we are using new forms API
 platformBrowserDynamic().bootstrapModule(AppModule);
 ```
 
@@ -462,7 +456,7 @@ export class MyComponent {
 ```
 
 ## Creating a custom widget
-Angular2 schema form allows you to create your own widget.
+Angular schema form allows you to create your own widget.
 Currently this feature is not completely defined and the API could change.
 
 ## Building the API documentation

@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "lib": [
+            "es2016",
+            "dom"
+        ],
+        "declaration": true,
+
+        "outDir": "../dist",
+        "declarationDir": "../dist",
+        "noEmitHelpers": true,
+        "importHelpers": true,
+
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+
+        "sourceMap": true
+    },
+    "files": [
+        "./lib/index.ts"
+    ],
+    "compileOnSave": false,
+    "angularCompilerOptions": {
+        "genDir": "../dist",
+        "strictMetadataEmit": true,
+        "skipTemplateCodegen": true
+    }
+}
